@@ -1,5 +1,5 @@
 .container {
-  background-color: rgb(223, 223, 223);
+  background-color: #e8e8e8;
   width: 120px;
   height: 100%;
   float: left;
@@ -20,6 +20,7 @@ li {
 
 .item-menu {
   color: black;
+  background-color: #e8e8e8;
   border: none;
   text-align: center;
   width: 100%;
@@ -55,6 +56,10 @@ li {
 
 .item-menu:focus {
   outline: none;
+  background-color: white;
+}
+
+.item-menu:active {
   background-color: white;
 }
 

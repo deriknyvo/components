@@ -1,49 +1,13 @@
 <div class="container">
   <ul>
-    <li>
-      <button class="item-menu">
+    <li *ngFor="let menu of menus; let i = index">
+      <button routerLink="{{ menu.url }}" class="item-menu">
         <div class="icon">
-          <i class="material-icons">person</i>
+          <i class="material-icons">{{ menu.icon }}</i>
         </div>
 
         <div class="menu">
-          <span>Usuários</span>
-        </div>
-      </button>
-    </li>
-
-    <li> 
-      <button class="item-menu">
-        <div class="icon">
-          <i class="material-icons">sms</i>
-        </div>
-
-        <div class="menu">
-          <span>Chat</span>
-        </div>
-      </button>
-    </li>
-
-    <li>
-      <button class="item-menu">
-        <div class="icon">
-          <i class="material-icons">poll</i>
-        </div>
-
-        <div class="menu">
-          <span>Dashboard</span>
-        </div>
-      </button>
-    </li>
-
-    <li>
-      <button class="item-menu">
-        <div class="icon">
-          <i class="material-icons">share</i>
-        </div>
-
-        <div class="menu">
-          <span>Compartilhar</span>
+          <span>{{ menu.title }}</span>
         </div>
       </button>
     </li>
