@@ -8,6 +8,7 @@ import { UserComponent } from './components/user/user.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ShareComponent } from './components/share/share.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ShareComponent } from './components/share/share.component';
     UserComponent,
     ChatComponent,
     DashboardComponent,
-    ShareComponent
+    ShareComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
