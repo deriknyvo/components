@@ -5,8 +5,10 @@ import { UserComponent } from './components/user/user.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ShareComponent } from './components/share/share.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+  { path: '/', component: LoginComponent },
   { path: 'user', component: UserComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'dashboard', component: DashboardComponent },

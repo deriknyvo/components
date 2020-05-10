@@ -9,6 +9,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ShareComponent } from './components/share/share.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     ChatComponent,
     DashboardComponent,
     ShareComponent,
-    TopBarComponent
+    TopBarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
