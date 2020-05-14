@@ -8,7 +8,7 @@ import { ShareComponent } from './components/share/share.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: '/', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'user', component: UserComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'dashboard', component: DashboardComponent },
