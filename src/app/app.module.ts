@@ -10,6 +10,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ShareComponent } from './components/share/share.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LoginComponent } from './components/login/login.component';
     DashboardComponent,
     ShareComponent,
     TopBarComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
