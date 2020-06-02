@@ -1,0 +1,31 @@
+.chat-sidebar {
+  height: calc(100vh - 100px);
+  width: 20%;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 1px #e4e4e4;
+  position: absolute;
+  right: 0;
+}
+
+.tabs-sidebar {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+
+  .tab-links {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+  .tab-links:hover {
+    background-color: #ddd;
+  }
+
+  .tab-links:active {
+    background-color: #ccc;
+  }
+}

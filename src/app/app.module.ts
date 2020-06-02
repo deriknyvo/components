@@ -12,6 +12,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ChatSidebarComponent } from './components/chat-sidebar/chat-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     TopBarComponent,
     LoginComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ChatSidebarComponent
   ],
   imports: [
     BrowserModule,
