@@ -8,6 +8,6 @@ export class AuthenticationService {
   constructor() { }
 
   isAuth() {
-    return false;
+    return true;
   }
 }
