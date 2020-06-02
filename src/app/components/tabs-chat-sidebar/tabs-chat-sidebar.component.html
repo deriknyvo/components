@@ -4,4 +4,6 @@
   <button class="tab-link" routerLink="/chat/archived" routerLinkActive="active">Arquivadas</button>
 </div>
 
-<router-outlet></router-outlet>
+<div [@routeAnimations]="prepareRoute(outlet)" >
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

@@ -20,9 +20,9 @@ const routes: Routes = [
     children: [
       { path: 'user', component: UserComponent },
       { path: 'chat', component: ChatComponent, children: [
-        { path: 'conversations', component: TabConversationsComponent },
-        { path: 'contacts', component: TabContactsComponent },
-        { path: 'archived', component: TabArchivedConversationsComponent }
+        { path: 'conversations', component: TabConversationsComponent, data: {animation: 'TabConversations'} },
+        { path: 'contacts', component: TabContactsComponent, data: {animation: 'TabContacts'} },
+        { path: 'archived', component: TabArchivedConversationsComponent, data: {animation: 'TabArchivedConversations'} }
       ]},
       { path: 'dashboard', component: DashboardComponent },
       { path: 'share', component: ShareComponent }
