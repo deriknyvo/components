@@ -13,6 +13,10 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ChatSidebarComponent } from './components/chat-sidebar/chat-sidebar.component';
+import { TabsChatSidebarComponent } from './components/tabs-chat-sidebar/tabs-chat-sidebar.component';
+import { TabConversationsComponent } from './components/tab-conversations/tab-conversations.component';
+import { TabContactsComponent } from './components/tab-contacts/tab-contacts.component';
+import { TabArchivedConversationsComponent } from './components/tab-archived-conversations/tab-archived-conversations.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { ChatSidebarComponent } from './components/chat-sidebar/chat-sidebar.com
     LoginComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ChatSidebarComponent
+    ChatSidebarComponent,
+    TabsChatSidebarComponent,
+    TabConversationsComponent,
+    TabContactsComponent,
+    TabArchivedConversationsComponent
   ],
   imports: [
     BrowserModule,
