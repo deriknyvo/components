@@ -18,16 +18,34 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      { path: 'user', component: UserComponent },
-      { path: 'chat', component: ChatComponent, children: [
-        { path: 'conversations', component: TabConversationsComponent, data: {animation: 'TabConversations'} },
-        { path: 'contacts', component: TabContactsComponent, data: {animation: 'TabContacts'} },
-        { path: 'archived', component: TabArchivedConversationsComponent, data: {animation: 'TabArchivedConversations'} }
-      ]},
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'share', component: ShareComponent }
+      { 
+        path: 'user', 
+        component: UserComponent, 
+        data: {animation: 'UserComponent'}
+      },
+      { 
+        path: 'chat', 
+        component: ChatComponent, 
+        children: [
+          { path: 'conversations',  component: TabConversationsComponent,         data: {animation: 'TabConversations'} },
+          { path: 'contacts',       component: TabContactsComponent,              data: {animation: 'TabContacts'} },
+          { path: 'archived',       component: TabArchivedConversationsComponent, data: {animation: 'TabArchivedConversations'} }
+        ], 
+        data: {animation: 'ChatComponent'}
+      },
+      { 
+        path: 'dashboard', 
+        component: DashboardComponent, 
+        data: {animation: 'DashboardComponent'} 
+      },
+      { 
+        path: 'share', 
+        component: ShareComponent, 
+        data: {animation: 'ShareComponent'} 
+      }
     ],
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
+    data: {animation: 'HomeComponent'}
   },
 
   { path: 'login', component: LoginComponent },

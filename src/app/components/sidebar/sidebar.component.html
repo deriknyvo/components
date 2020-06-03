@@ -1,7 +1,7 @@
 <div class="container">
   <ul>
     <li *ngFor="let menu of menus; let i = index">
-      <button routerLink="{{ menu.url }}" class="item-menu">
+      <button routerLink="{{ menu.url }}" routerLinkActive="active" class="item-menu">
         <div class="icon">
           <i class="material-icons">{{ menu.icon }}</i>
         </div>
