@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabConversationsComponent implements OnInit {
 
+  public search: string;
+
   constructor() { }
 
   ngOnInit() {

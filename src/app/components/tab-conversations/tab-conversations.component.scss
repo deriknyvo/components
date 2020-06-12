@@ -1,0 +1,23 @@
+.container-search-input {
+  padding: 25px 15px;
+  
+  input {
+    width: 100%;
+    font-size: 16px;
+    height: 37px;
+    padding: 0 11px;
+    border: none;
+    border: 1px solid #ccc;  
+    border-radius: 8px;
+    transition: box-shadow 120ms linear;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px black;
+  }
+
+  input::placeholder {
+    color: #bfbfbf;
+  }
+}
