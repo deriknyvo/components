@@ -20,6 +20,7 @@ import { TabsChatSidebarComponent } from './components/tabs-chat-sidebar/tabs-ch
 import { TabConversationsComponent } from './components/tab-conversations/tab-conversations.component';
 import { TabContactsComponent } from './components/tab-contacts/tab-contacts.component';
 import { TabArchivedConversationsComponent } from './components/tab-archived-conversations/tab-archived-conversations.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TabArchivedConversationsComponent } from './components/tab-archived-con
     TabsChatSidebarComponent,
     TabConversationsComponent,
     TabContactsComponent,
-    TabArchivedConversationsComponent
+    TabArchivedConversationsComponent,
+    FormComponent
   ],
   imports: [
     AppRoutingModule,

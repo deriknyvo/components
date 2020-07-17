@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { TabConversationsComponent } from './components/tab-conversations/tab-conversations.component';
 import { TabContactsComponent } from './components/tab-contacts/tab-contacts.component';
 import { TabArchivedConversationsComponent } from './components/tab-archived-conversations/tab-archived-conversations.component';
+import { FormComponent } from './components/form/form.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,11 @@ const routes: Routes = [
         path: 'share', 
         component: ShareComponent, 
         data: {animation: 'ShareComponent'} 
+      },
+      { 
+        path: 'form', 
+        component: FormComponent, 
+        data: {animation: 'FormComponent'} 
       }
     ],
     canActivate: [AuthGuard],

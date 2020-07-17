@@ -19,4 +19,9 @@ export const menus = [
     icon: 'share',
     title: 'Compartilhar'
   },
+  {
+    url: '/form',
+    icon: 'layers',
+    title: 'Formulário'
+  },
 ];
