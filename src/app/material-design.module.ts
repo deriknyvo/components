@@ -10,7 +10,8 @@ import {
     MatInputModule,
     MatIconModule,
     MatButtonModule
-  ]
+  ],
+  declarations: []
 })
 export class MaterialDesignModule {}
 

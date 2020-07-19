@@ -21,6 +21,7 @@ import { TabConversationsComponent } from './components/tab-conversations/tab-co
 import { TabContactsComponent } from './components/tab-contacts/tab-contacts.component';
 import { TabArchivedConversationsComponent } from './components/tab-archived-conversations/tab-archived-conversations.component';
 import { FormComponent } from './components/form/form.component';
+import { InputComponent } from './components/material/input/input.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FormComponent } from './components/form/form.component';
     TabConversationsComponent,
     TabContactsComponent,
     TabArchivedConversationsComponent,
-    FormComponent
+    FormComponent,
+    InputComponent
   ],
   imports: [
     AppRoutingModule,
